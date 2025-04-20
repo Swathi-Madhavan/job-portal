@@ -1,0 +1,21 @@
+{
+  "name": "job-portal",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server/server.js",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "nodemon server/server.js",
+    "build": "npm run build --prefix client"
+  },
+  "dependencies": {
+    "concurrently": "^6.5.1",
+    "nodemon": "^2.0.22"
+  },
+  "devDependencies": {
+    "dotenv": "^10.0.0"
+  },
+  "license": "ISC"
+}
